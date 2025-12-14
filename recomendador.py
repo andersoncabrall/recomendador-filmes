@@ -58,7 +58,7 @@ def mostrar_recomendacoes(tabela, recomendacoes):
 
 
 def main():
-    tabela = carregar_dados("filmes_cult_recomendador_v2.csv")
+    tabela = carregar_dados("filmes_recomendador.csv")
     tabela = preparar_dados(tabela)
 
     matriz_tfidf = gerar_tfidf(tabela["features"])
